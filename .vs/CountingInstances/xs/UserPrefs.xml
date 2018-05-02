@@ -1,0 +1,19 @@
+﻿<Properties StartupConfiguration="{371CCE7B-753F-4E8E-B055-244A74352AD0}|Default">
+  <MonoDevelop.Ide.Workbench ActiveDocument="CountingInstances/Countable.cs">
+    <Files>
+      <File FileName="CountingInstances/Program.cs" Line="33" Column="48" />
+      <File FileName="CountingInstances/Shapes/Square.cs" Line="11" Column="1" />
+      <File FileName="CountingInstances/Shapes/Circle.cs" Line="8" Column="10" />
+      <File FileName="CountingInstances/Shapes/Triangle.cs" Line="9" Column="6" />
+      <File FileName="CountingInstances/Shapes/Rhombus.cs" Line="1" Column="1" />
+      <File FileName="CountingInstances/Countable.cs" Line="4" Column="21" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.ItemProperties.CountingInstances PreferredExecutionTarget="MonoDevelop.Default" />
+  <MultiItemStartupConfigurations />
+</Properties>
