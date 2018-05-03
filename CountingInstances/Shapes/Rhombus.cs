@@ -5,6 +5,7 @@ namespace CountingInstances.Shapes
     {
         public Rhombus()
         {
+            Countable.TrackInstance(this);
         }
     }
 }
