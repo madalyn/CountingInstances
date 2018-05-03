@@ -5,7 +5,7 @@ namespace CountingInstances.Shapes
     {
         public Circle ()
         {
-            Countable.TrackInstance (this);
+            InstanceTracker.GetInstance().TrackInstance(this);
         }
     }
 }

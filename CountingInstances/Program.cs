@@ -47,23 +47,26 @@ namespace CountingInstances
             var rhombus3 = new Rhombus ();
             var rhombus4 = new Rhombus ();
 
+            // trigger GC to prove it all works
+            System.GC.Collect();
 
+            // Output
             Console.WriteLine ("Here are the instances of each of the classes: ");
 
-            Console.WriteLine ("Square: " + Countable.CountInstances (typeof (Square)));
-            Console.WriteLine ("Square (alive instances): " + Countable.CountInstances (typeof (Square), true));
-            Console.WriteLine();
+            Console.WriteLine ("Square: " + InstanceTracker.GetInstance().CountInstances (typeof (Square)));
+            Console.WriteLine ("Square (alive instances): " + InstanceTracker.GetInstance().CountInstances (typeof (Square), true));
+            Console.WriteLine ();
 
-            Console.WriteLine ("Circle: " + Countable.CountInstances (typeof (Circle)));
-            Console.WriteLine ("Circle: (alive instances): " + Countable.CountInstances (typeof (Circle), true));
-            Console.WriteLine();
+            Console.WriteLine ("Circle: " + InstanceTracker.GetInstance().CountInstances (typeof (Circle)));
+            Console.WriteLine ("Circle: (alive instances): " + InstanceTracker.GetInstance().CountInstances (typeof (Circle), true));
+            Console.WriteLine ();
 
-            Console.WriteLine ("Triangle: " + Countable.CountInstances (typeof (Triangle)));
-            Console.WriteLine ("Triangle (alive instances): " + Countable.CountInstances (typeof (Triangle), true));
-            Console.WriteLine();
+            Console.WriteLine ("Triangle: " + InstanceTracker.GetInstance().CountInstances (typeof (Triangle)));
+            Console.WriteLine ("Triangle (alive instances): " + InstanceTracker.GetInstance().CountInstances (typeof (Triangle), true));
+            Console.WriteLine ();
 
-            Console.WriteLine ("Rhombus: " + Countable.CountInstances (typeof (Rhombus)));
-            Console.WriteLine ("Rhombus (alive instances): " + Countable.CountInstances (typeof (Rhombus), true));
+            Console.WriteLine ("Rhombus: " + InstanceTracker.GetInstance().CountInstances (typeof (Rhombus)));
+            Console.WriteLine ("Rhombus (alive instances): " + InstanceTracker.GetInstance().CountInstances (typeof (Rhombus), true));
         }
     }
 }

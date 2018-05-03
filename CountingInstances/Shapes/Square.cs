@@ -5,7 +5,7 @@ namespace CountingInstances.Shapes
     {
         public Square ()
         {
-            Countable.TrackInstance (this);
+            InstanceTracker.GetInstance().TrackInstance (this);
             this.dummySquare ();
         }
 
