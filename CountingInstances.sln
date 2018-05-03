@@ -3,6 +3,8 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2012
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CountingInstances", "CountingInstances\CountingInstances.csproj", "{371CCE7B-753F-4E8E-B055-244A74352AD0}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CountingInstancesTests", "CountingInstancesTests\CountingInstancesTests.csproj", "{0C00FB21-B3DC-4150-A3AB-9D51CD169164}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -13,5 +15,9 @@ Global
 		{371CCE7B-753F-4E8E-B055-244A74352AD0}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{371CCE7B-753F-4E8E-B055-244A74352AD0}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{371CCE7B-753F-4E8E-B055-244A74352AD0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0C00FB21-B3DC-4150-A3AB-9D51CD169164}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0C00FB21-B3DC-4150-A3AB-9D51CD169164}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0C00FB21-B3DC-4150-A3AB-9D51CD169164}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0C00FB21-B3DC-4150-A3AB-9D51CD169164}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal

@@ -16,7 +16,7 @@ namespace CountingInstances.Shapes
         }
 
         // creates five squares when called
-        public void externalSquare ()
+        public void ExternalSquare ()
         {
             var square1 = new Square ();
             var square2 = new Square ();

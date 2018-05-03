@@ -66,5 +66,14 @@ namespace CountingInstances
 
             return instances[instanceType].Count;
         }
+
+        /// <summary>
+        /// Clears out all the tracked instances.
+        /// Used for Unit Tests
+        /// </summary>
+        public void ResetInstances ()
+        {
+            instances = new Dictionary<Type, IList<WeakReference>> ();
+        }
     }
 }
