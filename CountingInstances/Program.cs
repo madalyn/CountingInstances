@@ -31,7 +31,7 @@ namespace CountingInstances
             var square5 = new Square ();
 
             // + 5 more squares
-            square5.externalSquare ();
+            square5.ExternalSquare ();
 
             // 3 circles
             var circle1 = new Circle ();

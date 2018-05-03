@@ -25,7 +25,7 @@ namespace CountingInstancesTests
             var square5 = new Square ();
 
             // + 5 more squares
-            square5.externalSquare();
+            square5.ExternalSquare();
 
             // trigger GC
             System.GC.Collect();
@@ -74,7 +74,7 @@ namespace CountingInstancesTests
 
             // 1 + 5 more squares
             var square = new Square ();
-            square.externalSquare ();
+            square.ExternalSquare ();
 
             // 4 rhombi + 1 for each square (4 + 6)
             var rhombus1 = new Rhombus ();
