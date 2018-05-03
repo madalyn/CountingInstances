@@ -3,9 +3,9 @@ namespace CountingInstances.Shapes
 {
     public class Triangle
     {
-        public Triangle()
+        public Triangle ()
         {
-            Countable.TrackInstance(this);
+            Countable.TrackInstance (this);
         }
     }
 }

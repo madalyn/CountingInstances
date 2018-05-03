@@ -12,9 +12,9 @@ namespace CountingInstances
     {
         // all of the refrence objects that are the instances of this class
         //static IList<WeakReference> instances2 = new List<WeakReference>();
-        static IDictionary<Type, IList<WeakReference>> instances = new Dictionary<Type, IList<WeakReference>>();
+        static IDictionary<Type, IList<WeakReference>> instances = new Dictionary<Type, IList<WeakReference>> ();
 
-        private Countable()
+        private Countable ()
         {
         }
 
@@ -33,24 +33,24 @@ namespace CountingInstances
         // every time a new instance is created, update instance tracking
         public static void TrackInstance (Object instance)
         {
-            Type instanceType = instance.GetType();
+            Type instanceType = instance.GetType ();
 
-            if (instances.ContainsKey(instanceType)) {
-                instances[instanceType].Add(new WeakReference(instance));
+            if (instances.ContainsKey (instanceType)) {
+                instances[instanceType].Add (new WeakReference (instance));
             } else {
-                instances.Add(instanceType, new List<WeakReference> { new WeakReference(instance) });
+                instances.Add(instanceType, new List<WeakReference> { new WeakReference (instance) });
             }
         }
 
         public static int CountInstances (Type instanceType, bool onlyAliveInstances=false)
         {
             // if no instances
-            if (!instances.ContainsKey(instanceType)) {
+            if (!instances.ContainsKey (instanceType)) {
                 return 0;
             }
 
             if (onlyAliveInstances) {
-                return (instances[instanceType].Where(x => x.IsAlive)).Count();
+                return (instances[instanceType].Where (x => x.IsAlive)).Count ();
             }
 
             return instances[instanceType].Count;

@@ -23,38 +23,40 @@ namespace CountingInstances
         static void Main(string[] args)
         {
             // 5 squares
-            var square1 = new Square();
-            var square2 = new Square();
-            var square3 = new Square();
-            var square4 = new Square();
-            var square5 = new Square();
+            var square1 = new Square ();
+            var square2 = new Square ();
+            var square3 = new Square ();
+            var square4 = new Square ();
+            var square5 = new Square ();
+
+            // + 5 more squares
+            square5.externalSquare ();
 
             // 3 circles
-            var circle1 = new Circle();
-            var circle2 = new Circle();
-            var circle3 = new Circle();
+            var circle1 = new Circle ();
+            var circle2 = new Circle ();
+            var circle3 = new Circle ();
 
             // 2 triangles
-            var triangle1 = new Triangle();
-            var triangle2 = new Triangle();
+            var triangle1 = new Triangle ();
+            var triangle2 = new Triangle ();
 
-            // 4 rhombi
-            var rhombus1 = new Rhombus();
-            var rhombus2 = new Rhombus();
-            var rhombus3 = new Rhombus();
-            var rhombus4 = new Rhombus();
+            // 4 rhombi + 1 for each square (4 + 10)
+            var rhombus1 = new Rhombus ();
+            var rhombus2 = new Rhombus ();
+            var rhombus3 = new Rhombus ();
+            var rhombus4 = new Rhombus ();
 
 
             Console.WriteLine ("Here are the instances of each of the classes: ");
-            Console.WriteLine (Countable.CountInstances (typeof (Square)));
-            Console.WriteLine (Countable.CountInstances (typeof (Square), true));
-            Console.WriteLine (Countable.CountInstances (typeof (Circle)));
-            Console.WriteLine (Countable.CountInstances (typeof (Circle), true));
-            Console.WriteLine (Countable.CountInstances (typeof (Triangle)));
-            Console.WriteLine (Countable.CountInstances (typeof (Triangle), true));
-            Console.WriteLine (Countable.CountInstances (typeof (Rhombus)));
-            Console.WriteLine (Countable.CountInstances (typeof (Rhombus), true));
-
+            Console.WriteLine ("Square: " + Countable.CountInstances (typeof (Square)));
+            Console.WriteLine ("Square (alive instances): " + Countable.CountInstances (typeof (Square), true));
+            Console.WriteLine ("Circle: " + Countable.CountInstances (typeof (Circle)));
+            Console.WriteLine ("Circle: (alive instances): " + Countable.CountInstances (typeof (Circle), true));
+            Console.WriteLine ("Triangle: " + Countable.CountInstances (typeof (Triangle)));
+            Console.WriteLine ("Triangle (alive instances):" + Countable.CountInstances (typeof (Triangle), true));
+            Console.WriteLine ("Rhombus:" + Countable.CountInstances (typeof (Rhombus)));
+            Console.WriteLine ("Rhombus (alive instances):" + Countable.CountInstances (typeof (Rhombus), true));
         }
     }
 }

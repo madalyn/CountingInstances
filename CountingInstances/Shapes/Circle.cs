@@ -3,9 +3,9 @@ namespace CountingInstances.Shapes
 {
     public class Circle
     {
-        public Circle()
+        public Circle ()
         {
-            Countable.TrackInstance(this);
+            Countable.TrackInstance (this);
         }
     }
 }
