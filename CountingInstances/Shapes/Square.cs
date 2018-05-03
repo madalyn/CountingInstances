@@ -7,10 +7,10 @@ namespace CountingInstances.Shapes
         public Square ()
         {
             InstanceTracker.GetInstance().TrackInstance (this);
-            this.dummySquare ();
+            this.DummySquare ();
         }
 
-        void dummySquare ()
+        void DummySquare ()
         {
             var rhombus = new Rhombus ();
         }
