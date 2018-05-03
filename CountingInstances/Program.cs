@@ -1,6 +1,4 @@
-﻿using System;
-using CountingInstances.Shapes;
-/*
+﻿/*
 * 1. A mechanism to count the number of times a set of classes have been instantiated. 
 * 2. The solution must be generic enough such that it can count instances of an arbitrary number of different classes. 
 * 3. The solution must be extensible such that defining new classes to be counted is trivially easy using standard OO principles.
@@ -16,6 +14,9 @@ using CountingInstances.Shapes;
 * Bonus #1:  For additional bonus points, consider a mechanism that does not require each class counted to inherit from a common base class. 
 * Bonus #2:  For even more bonus points, in addition to the number of instances created, also display the count of the number of instances that are still alive (i.e. reachable).
 */
+using System;
+using CountingInstances.Shapes;
+
 namespace CountingInstances
 {
     class Program
